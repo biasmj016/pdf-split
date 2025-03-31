@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  pdfsplit:
+    build:
+      context: docker
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
