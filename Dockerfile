@@ -11,5 +11,9 @@ COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
+#페이지로 분할하는 경우
 CMD ["python", "src/pageSplit.py"]
+
+#사이즈로 분할하는 경우
+#CMD ["python", "src/sizeSplit.py"]
 
